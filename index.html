@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kedai Kopi</title>
+
+    <!-- cdn feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar">
+      <!-- bagian1 -->
+      <a href="" class="navbar-logo">kedai <span>kopi</span>.</a>
+      <!-- bagian 2 -->
+      <!-- navbar navigasi -->
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <!-- bagian 3 -->
+      <!-- tombol pendukung -->
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- hero section start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Mari nikmati secangkir <span>kopi</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, vel?</p>
+        <a href="#" class="cta">Beli sekarang</a>
+      </main>
+    </section>
+    <!-- hero section end -->
+
+    <!-- About Me section start -->
+    <section class="about" id="about">
+      <h2><span>About</span> Me</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="./img/about-me.jpg" alt="About Me" />
+        </div>
+        <div class="content">
+          <h3>Kenapa memilih kopi kami?</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A voluptatibus aut repudiandae ullam quis illum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet soluta pariatur ex labore voluptates sint! Et saepe deleniti atque dicta.</p>
+        </div>
+      </div>
+    </section>
+    <!-- About Me section end -->
+
+    <!-- Menu section start -->
+    <section class="menu" id="menu">
+      <h2><span>Menu</span></h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt at assumenda magni.</p>
+
+      <div class="row">
+        <div class="menu-card">
+          <img class="menu-card-img" src="img/menu/espresso.jpg" alt="Espresso" width="200" />
+          <h3 class="menu-card-title">- Espresso -</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="menu-card">
+          <img class="menu-card-img" src="img/menu/ice-americano.jpg" alt="Espresso" width="200" />
+          <h3 class="menu-card-title">- Ice Americano -</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="menu-card">
+          <img class="menu-card-img" src="img/menu/capucino-latte.avif" alt="Espresso" width="200" />
+          <h3 class="menu-card-title">- Capuccino & Latte -</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+      </div>
+    </section>
+    <!-- Menu section end -->
+
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+      <h2><span>Contact</span> Me</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt at assumenda magni.</p>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.4699135472633!2d106.81470707378168!3d-6.333116161964041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ef88fa362549%3A0xd87fcba035eb1e3e!2sBakso%20Anugrah(pakde%20alex)!5e0!3m2!1sid!2sid!4v1781335852462!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"></iframe>
+
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="Name" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="email" placeholder="Email" />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="number" placeholder="Phone" />
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <!-- contact section end -->
+
+    <!-- footer start -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="x"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="credit">
+        <p>Created by <a>Sawindri</a>. | &copy; 2026</p>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- js feather icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- my javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
