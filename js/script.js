@@ -13,7 +13,7 @@ document.querySelector("#search-btn").onclick = (e) => {
   searchForm.classList.toggle("active");
   searchBox.focus();
   // agar aksi default tidak dilakukan, seperti ketika ingin pindah form atau melakukan aksi yang lain tanpa mempengaruhi default awal
-  (e, preventDefault());
+  e.preventDefault();
 };
 
 // toggle class active shopping cart
@@ -39,3 +39,27 @@ document.addEventListener("click", function (e) {
     shoppingCart.classList.remove("active");
   }
 });
+
+// modal box
+const itemDetailModal = document.querySelector("#item-detail-modal");
+const itemDetailBtns = document.querySelectorAll(".item-detail-btn");
+
+itemDetailBtns.forEach((btn) => {
+  btn.onclick = (e) => {
+    itemDetailModal.style.display = "flex";
+    e.preventDefault();
+  };
+});
+
+// klik tombol close modal box
+document.querySelector(".modal .close-icon").onclick = (e) => {
+  itemDetailModal.style.display = "none";
+  e.preventDefault();
+};
+
+//  klik tombol diluar modal
+window.onclick = (e) => {
+  if (e.target === itemDetailModal) {
+    itemDetailModal.style.display = "none";
+  }
+};
