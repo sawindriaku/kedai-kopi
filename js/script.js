@@ -16,9 +16,17 @@ document.querySelector("#search-btn").onclick = (e) => {
   (e, preventDefault());
 };
 
+// toggle class active shopping cart
+const shoppingCart = document.querySelector(".shopping-cart");
+document.querySelector("#shopping-cart-btn").onclick = (e) => {
+  shoppingCart.classList.toggle("active");
+  e.preventDefault();
+};
+
 // klik diluar sidebar untuk menghilanngkan nav diluar elemen
 const hamburger = document.querySelector("#hamburger-menu");
 const searchButton = document.querySelector("#search-btn");
+const sc = document.querySelector("#shopping-cart-btn");
 
 document.addEventListener("click", function (e) {
   if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
@@ -26,5 +34,8 @@ document.addEventListener("click", function (e) {
   }
   if (!searchButton.contains(e.target) && !searchForm.contains(e.target)) {
     searchForm.classList.remove("active");
+  }
+  if (!sc.contains(e.target) && !shoppingCart.contains(e.target)) {
+    shoppingCart.classList.remove("active");
   }
 });
